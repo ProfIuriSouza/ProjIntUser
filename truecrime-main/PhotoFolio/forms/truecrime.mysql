@@ -1,0 +1,13 @@
+drop database if exists db_truecrime;
+create database db_truecrime;
+use db_truecrime;
+
+create table tb_avaliacoes (
+	id  int auto_increment primary key,
+    P1 varchar(45) not null,
+    P2  varchar(45) not null,
+    P3  varchar(45) not null,
+     P4  varchar(45) not null,
+      P5  varchar(45) not null,
+    
+    );

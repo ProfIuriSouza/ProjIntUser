@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Geek Review | Avalie-nos</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<script src="./components/components.js" type="module"></script>
+</head>
+
+<body>
+	<main-header></main-header>
+	<div slot="page-header" class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10 text-center">
+					<h1 class="text-uppercase">Avalie-nos</h1>
+					<p class="lead">Ajude-nos a melhorar sua experiência no Geek Review</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-8">
+
+					<!-- post content -->
+					<div class="section-row">
+						<p>Avalie o Geek Review de acordo com sua experiência no site conforme os critérios a seguir:</p>
+						<form method="POST" action="/backend/save.php">
+							<div style="margin-bottom: 2rem;">
+								<label for="objetivo" style="display: block;">O objetivo principal do Geek Review (a visualização de reviews geeks) foi identificado de forma clara ao acessar o site.</label>
+								<input id="objetivo1" type="radio" name="objetivo" value="0"> <label style="font-weight: normal;" for="objetivo1">Concordo Totalmente</label>
+								<input id="objetivo2" type="radio" name="objetivo" value="1"> <label style="font-weight: normal;" for="objetivo2">Concordo Parcialmente</label>
+								<input id="objetivo3" type="radio" name="objetivo" value="2"> <label style="font-weight: normal;" for="objetivo3">Discordo Parcialmente</label>
+								<input id="objetivo4" type="radio" name="objetivo" value="3"> <label style="font-weight: normal;" for="objetivo4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="conteudo_personalizado" style="display: block;">Os conteúdos disponibilizados no Geek Review são condizentes com a proposta do site.</label>
+								<input id="conteudo_personalizado1" type="radio" name="conteudo_personalizado" value="0"> <label style="font-weight: normal;" for="conteudo_personalizado1">Concordo Totalmente</label>
+								<input id="conteudo_personalizado2" type="radio" name="conteudo_personalizado" value="1"> <label style="font-weight: normal;" for="conteudo_personalizado2">Concordo Parcialmente</label>
+								<input id="conteudo_personalizado3" type="radio" name="conteudo_personalizado" value="2"> <label style="font-weight: normal;" for="conteudo_personalizado3">Discordo Parcialmente</label>
+								<input id="conteudo_personalizado4" type="radio" name="conteudo_personalizado" value="3"> <label style="font-weight: normal;" for="conteudo_personalizado4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="usabilidade" style="display: block;">O Geek Review é um site simples e direto de usar.</label>
+								<input id="usabilidade1" type="radio" name="usabilidade" value="0"> <label style="font-weight: normal;" for="usabilidade1">Concordo Totalmente</label>
+								<input id="usabilidade2" type="radio" name="usabilidade" value="1"> <label style="font-weight: normal;" for="usabilidade2">Concordo Parcialmente</label>
+								<input id="usabilidade3" type="radio" name="usabilidade" value="2"> <label style="font-weight: normal;" for="usabilidade3">Discordo Parcialmente</label>
+								<input id="usabilidade4" type="radio" name="usabilidade" value="3"><label style="font-weight: normal;" for="usabilidade4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="organizacao_elementos" style="display: block;">O Geek Review possui uma organização satisfatória de elementos nas páginas e seus conteúdos por categoria são devidamente distribuídos.</label>
+								<input id="elementos1" type="radio" name="organizacao_elementos" value="0"> <label style="font-weight: normal;" for="elementos1">Concordo Totalmente</label>
+								<input id="elementos2" type="radio" name="organizacao_elementos" value="1"> <label style="font-weight: normal;" for="elementos2">Concordo Parcialmente</label>
+								<input id="elementos3" type="radio" name="organizacao_elementos" value="2"> <label style="font-weight: normal;" for="elementos3">Discordo Parcialmente</label>
+								<input id="elementos4" type="radio" name="organizacao_elementos" value="3"> <label style="font-weight: normal;" for="elementos4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="cores" style="display: block;">A escolha de cores que compõem o Geek Review são harmônicas e não causam desconforto na navegação do site.</label>
+								<input id="cores1" type="radio" name="cores" value="0"> <label style="font-weight: normal;" for="cores1">Concordo Totalmente</label>
+								<input id="cores2" type="radio" name="cores" value="1"> <label style="font-weight: normal;" for="cores2">Concordo Parcialmente</label>
+								<input id="cores3" type="radio" name="cores" value="2"> <label style="font-weight: normal;" for="cores3">Discordo Parcialmente</label>
+								<input id="cores4" type="radio" name="cores" value="3"> <label style="font-weight: normal;" for="cores4">Discordo Totalmente</label>
+							</div>
+							<div style="margin-bottom: 2rem;">
+								<label for="comentario">Deixe uma sugestão, feedback ou crítica:</label>
+								<textarea class="input" name="comentario" id="comentario" placeholder="Deixe seu comentário" class="form-control"></textarea>
+							</div>
+							<button class="primary-button">Avaliar</button>
+						</form>
+					</div>
+					<!-- /post content -->
+
+				</div>
+				<div class="col-md-4">
+
+					<!-- social widget -->
+					<div class="aside-widget">
+						<div class="section-title">
+							<h2 class="title">Siga-nos nas nossas redes sociais</h2>
+						</div>
+						<div class="social-widget">
+							<ul>
+								<li>
+									<a href="#" class="social-facebook">
+										<i class="fa fa-facebook"></i>
+										<span>21.2K<br>Followers</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="social-twitter">
+										<i class="fa fa-twitter"></i>
+										<span>10.2K<br>Seguidores</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="social-instagram">
+										<i class="fa fa-instagram"></i>
+										<span>5K<br>Seguidores</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /social widget -->
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
+	<main-footer></main-footer>
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
